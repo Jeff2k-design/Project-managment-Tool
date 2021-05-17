@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="Left">
-    <h2>Teachers</h2>
+    <h2>Schedule</h2>
 </div>
 
 <div class="row">
@@ -29,9 +29,9 @@
     <tr>
         <th>No</th>
         <th>Group Name</th>
-        <th>Panelfirst</th>
-        <th>Panelsecond</th>
-        <th>Panelthird</th>
+        <th>Panel 1</th>
+        <th>Panel 2</th>
+        <th>Panel 3</th>
         <th>Date</th>
         <th>Venue</th>
         <th width="280px">Action</th>
@@ -52,7 +52,7 @@
 
             <form action="{{ route('sched.destroy',$scheds->id) }}" method="POST">
 
-            <a class="btn btn-info" href="{{ route('sched.show',$scheds->id) }}">Show</a>
+        
 
             <a class="btn btn-primary" href="{{ route('sched.edit', $scheds->id) }}">Edit</a>
 

@@ -40,7 +40,7 @@ class SchedController extends Controller
     public function show(Sched $sched)
     {
 
-    return view('sched.show',compact('sched'));
+  
 
     }
 
@@ -57,7 +57,7 @@ class SchedController extends Controller
 
     ]);
 
-    $hire->update($request->all());
+    $sched->update($request->all());
 
     return redirect()->route('sched.index')
     ->with('success','Schedule updated');
