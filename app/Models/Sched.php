@@ -11,6 +11,6 @@ class Sched extends Model
 
 
     protected $fillable = [
-        'GroupName', 'Panelfirst', 'Panelsecond','Panelthird', 'Date', 'Venue'
+        'GroupNumber', 'Panelfirst', 'Panelsecond', 'Panelthird', 'Time', 'Date', 'Venue'
     ];
 }

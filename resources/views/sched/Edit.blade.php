@@ -43,7 +43,7 @@
 
 @endif
 
-<form action="{{ route('sched.update',$sched->id) }}" method="POST">
+<form action="{{ route('sched.update',$scheds->id) }}" method="POST">
 
 @csrf
 
@@ -55,9 +55,9 @@
 
         <div class="form-group">
 
-        <strong>GroupName:</strong>
+        <strong>GroupNumber:</strong>
 
-        <input type="text" name="GroupName" class="form-control" placeholder="GroupName">
+        <input type="text" name="GroupNumber" value="{{ $scheds->GroupNumber }}" class="form-control" placeholder="GroupNumber">
     </div>
 </div>
 
@@ -67,7 +67,7 @@
 
             <strong>Panel 1</strong>
 
-            <input type="text" name="Panelfirst" class="form-control" placeholder="Panelfirst">
+            <input type="text" name="Panelfirst" value="{{ $scheds->Panelfirst }}" class="form-control" placeholder="Panelfirst">
         </div>
     </div>
 
@@ -77,7 +77,7 @@
 
             <strong>Panel 2</strong>
 
-            <input type="text" name="Panelsecond" class="form-control" placeholder="Panelsecond">
+            <input type="text" name="Panelsecond" value="{{ $scheds->Panelsecond }}" class="form-control" placeholder="Panelsecond">
         </div>
     </div>
 
@@ -87,7 +87,17 @@
 
             <strong>Panel 3</strong>
 
-            <input type="text" name="Panelthird" class="form-control" placeholder="Panelthird">
+            <input type="text" name="Panelthird" value="{{ $scheds->Panelthird }}" class="form-control" placeholder="Panelthird">
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+
+        <div class="form-group">
+
+            <strong>Time</strong>
+
+            <input type="text" name="Time" value="{{ $scheds->Time }}" class="form-control" placeholder="Time">
         </div>
     </div>
 
@@ -97,7 +107,7 @@
 
             <strong>Date</strong>
 
-            <input type="text" name="Date" class="form-control" placeholder="Date">
+            <input type="text" name="Date" value="{{ $scheds->Date }}" class="form-control" placeholder="Date">
         </div>
     </div>
 
@@ -107,7 +117,7 @@
 
             <strong>Venue</strong>
 
-            <input type="text" name="Venue" class="form-control" placeholder="Venue">
+            <input type="text" name="Venue"  value="{{ $scheds->Venue }}" class="form-control" placeholder="Venue">
         </div>
     </div>
 
@@ -115,7 +125,7 @@
 
 <button type="submit" class="btn btn-primary">Submit</button>
 
-</div>
+    </div>
 
 </div>
 

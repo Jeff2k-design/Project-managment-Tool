@@ -23,10 +23,11 @@ class SchedController extends Controller
     public function store(Request $request)
     {
    $request->validate([
-       'GroupName' => 'required',
+       'GroupNumber' => 'required',
        'Panelfirst' => 'required',
        'Panelsecond' => 'required',
        'Panelthird' => 'required',
+       'Time' => 'required',
        'Date' => 'required',
        'Venue' => 'required',
    ]); 

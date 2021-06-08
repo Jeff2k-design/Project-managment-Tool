@@ -28,10 +28,11 @@
 
     <tr>
         <th>No</th>
-        <th>Group Name</th>
+        <th>GroupNumber</th>
         <th>Panel 1</th>
         <th>Panel 2</th>
         <th>Panel 3</th>
+        <th>Time</th>
         <th>Date</th>
         <th>Venue</th>
         <th width="280px">Action</th>
@@ -41,10 +42,11 @@
 
     <tr>
         <td>{{ ++$i }}</td>
-        <td>{{ $scheds->GroupName }}</td>
+        <td>{{ $scheds->GroupNumber }}</td>
         <td>{{ $scheds->Panelfirst }}</td>
         <td>{{ $scheds->Panelsecond }}</td>
         <td>{{ $scheds->Panelthird }}</td>
+        <td>{{ $scheds->Time }}</td>
         <td>{{ $scheds->Date }}</td>
         <td>{{ $scheds->Venue }}</td>
 
@@ -54,7 +56,7 @@
 
         
 
-            <a class="btn btn-primary" href="{{ route('sched.edit', $scheds->id) }}">Edit</a>
+            <a class="btn btn-primary" href="{{ route('sched.edit',$scheds->id) }}">Edit</a>
 
             @csrf
             @method('DELETE')

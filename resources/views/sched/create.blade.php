@@ -47,9 +47,9 @@
 
         <div class="form-group">
 
-        <strong>GroupName:</strong>
+        <strong>GroupNumber:</strong>
 
-        <input type="text" name="GroupName" class="form-control" placeholder="GroupName">
+        <input type="text" name="GroupNumber" class="form-control" placeholder="GroupNumber">
     </div>
 </div>
 
@@ -83,6 +83,16 @@
         </div>
     </div>
 
+    <div class="col-xs-12 col-sm-12 col-md-12">
+
+        <div class="form-group">
+
+            <strong>Time</strong>
+
+            <input type="text" name="Time" class="form-control" placeholder="Time">
+        </div>
+    </div>
+
      <div class="col-xs-12 col-sm-12 col-md-12">
 
         <div class="form-group">
@@ -92,6 +102,7 @@
             <input type="text" name="Date" class="form-control" placeholder="Date">
         </div>
     </div>
+
 
     <div class="col-xs-12 col-sm-12 col-md-12">
 
