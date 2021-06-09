@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SchedController;
+use App\Http\Controllers\GroupController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/sched', SchedController::class);
+
+Route::resource('/group', GroupController::class);
+
+

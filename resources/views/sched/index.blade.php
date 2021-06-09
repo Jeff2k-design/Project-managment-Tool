@@ -15,6 +15,13 @@
             </div>
         </div>
 
+        <div class="pull-right">
+            <a class="btn btn-success" href="{{ route('group.index') }}">Grouping Tool</a>
+                </div>
+            </div>
+        </div>
+
+
     @if ($message = Session::get('success'))
     <div class="alert alert-success">
 
@@ -56,7 +63,7 @@
 
         
 
-            <a class="btn btn-primary" href="{{ route('sched.edit',$scheds->id) }}">Edit</a>
+            <a class="btn btn-primary" href="{{ route('sched.edit', $scheds->id) }}">Edit</a>
 
             @csrf
             @method('DELETE')
